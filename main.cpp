@@ -10,14 +10,14 @@ int main(int argc, char const *argv[])
         std::cout << "Please input the file name."  << std::endl;
         return -1;       
     }
-    // GauBlurCmp(String(argv[1]));
-    // CannyCmp(String(argv[1]));
-    // GauBlurVideoCmp(String(argv[1]));
-    // CannyVideoCmp(String(argv[1]));
-    // BilFiltCmp(String(argv[1]));
+    // GauBlurCmp(cv::String(argv[1]));
+    // CannyCmp(cv::String(argv[1]));
+    // GauBlurVideoCmp(cv::String(argv[1]));
+    CannyVideoCmp(cv::String(argv[1]));
+    // BilFiltCmp(cv::String(argv[1]));
     // BilFiltVideoCmp(cv::String(argv[1]));
     // BilFiltVideoSav(cv::String(argv[1]));
-    CannyVideoSav(cv::String(argv[1]));
+    // CannyVideoSav(cv::String(argv[1]));
     return 0;
 }
 

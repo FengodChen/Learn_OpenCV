@@ -162,6 +162,16 @@ void CannyVideoCmp(cv::String f_name)
         // 高斯模糊(输入矩阵，输出矩阵，高斯核大小，X方向标准差，Y方向标准差)
         cv::GaussianBlur(frame_in_g, frame_out, cv::Size(5,5), 3, 3);
 
+        // 双边模糊(输入矩阵，输出矩阵，高斯核直径，色彩空间标准差，坐标空间标准差)
+        // 不知为何这个有错误，错误信息：
+        /*
+         * terminate called after throwing an instance of 'cv::Exception'
+         * what():  OpenCV(4.0.0) /home/fengodchen/Documents/opencv-4.0.0/modules/imgproc/src/canny.cpp:952: error: (-215:Assertion failed) (_dst.getObj() != _src.getObj() || _src.type() == CV_8UC1) && "Inplace parameters are not supported" in function 'Canny'
+         * 
+         * Aborted (core dumped)
+         */
+        // cv::bilateralFilter(frame_in, frame_out, GS_LEN, GS_LEN*2,  GS_LEN/2);
+
         // Canny边缘算法(源矩阵，输出矩阵，滞后性低阀值，滞后性高阀值，应用Sobel算子孔径大小)
         cv::Canny(frame_out, frame_out, THRES_HOLD__, THRES_HOLD__*3);
 

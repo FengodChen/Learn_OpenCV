@@ -3,7 +3,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#define THRES_HOLD__ (50)
+#define THRES_HOLD__ (40)
 #define GS_LEN (50)
 
 /*
