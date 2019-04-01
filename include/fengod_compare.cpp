@@ -75,7 +75,7 @@ void CannyCmp(cv::String f_name)
     // GaussianBlur(img_out, img_out, Size(5,5), 3, 3);
 
     // Canny边缘算法(源矩阵，输出矩阵，滞后性低阀值，滞后性高阀值，应用Sobel算子孔径大小)
-    cv::Canny(img_in_g, img_out, THRES_HOLD__, THRES_HOLD__*3);
+    cv::Canny(img_out, img_out, THRES_HOLD__, THRES_HOLD__*3);
 
     // 缩小一半
     cv::pyrDown(img_in, img_in);
@@ -163,7 +163,7 @@ void CannyVideoCmp(cv::String f_name)
         cv::GaussianBlur(frame_in_g, frame_out, cv::Size(5,5), 3, 3);
 
         // Canny边缘算法(源矩阵，输出矩阵，滞后性低阀值，滞后性高阀值，应用Sobel算子孔径大小)
-        cv::Canny(frame_in_g, frame_out, THRES_HOLD__, THRES_HOLD__*3);
+        cv::Canny(frame_out, frame_out, THRES_HOLD__, THRES_HOLD__*3);
 
         // 显示图像
         cv::imshow(f_name+"in", frame_in);
@@ -294,7 +294,7 @@ void CannyVideoSav(cv::String f_name)
         cv::GaussianBlur(frame_in_g, frame_out, cv::Size(5,5), 3, 3);
 
         // Canny边缘算法(源矩阵，输出矩阵，滞后性低阀值，滞后性高阀值，应用Sobel算子孔径大小)
-        cv::Canny(frame_in_g, frame_out, THRES_HOLD__, THRES_HOLD__*3);
+        cv::Canny(frame_out, frame_out, THRES_HOLD__, THRES_HOLD__*3);
 
         // 将处理后的视频输出给输出
         outputVideo << frame_out;
