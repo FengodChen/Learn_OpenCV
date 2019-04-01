@@ -229,7 +229,7 @@ void BilFiltVideoSav(cv::String f_name)
 
     // 打开输出视频
     cv::VideoWriter outputVideo;                                        // Open the output
-    outputVideo.open(f_name + "out.avi",                                // 输出名字
+    outputVideo.open(f_name + "_out.avi",                                // 输出名字
         cap.get(cv::CAP_PROP_FOURCC),                                   // 输出格式
         cap.get(cv::CAP_PROP_FPS),                                      // 输出帧率
         cv::Size(cap.get(cv::CAP_PROP_FRAME_WIDTH),                     // 输出大小（宽度，高度）
