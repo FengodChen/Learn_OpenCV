@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     // GauBlurCmp(cv::String(argv[1]));
     // CannyCmp(cv::String(argv[1]));
     // GauBlurVideoCmp(cv::String(argv[1]));
-    CannyVideoCmp(cv::String(argv[1]));
+    // CannyVideoCmp(cv::String(argv[1]));
     // BilFiltCmp(cv::String(argv[1]));
     // BilFiltVideoCmp(cv::String(argv[1]));
     // BilFiltVideoSav(cv::String(argv[1]));
