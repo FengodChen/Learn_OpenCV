@@ -1,5 +1,5 @@
-#ifndef __FENGOD_COMPARE
-#define __FENGOD_COMPARE
+#ifndef __FENGOD_COMPARE_HPP
+#define __FENGOD_COMPARE_HPP
 
 #include <opencv2/opencv.hpp>
 
@@ -23,14 +23,10 @@ void BilFiltCmp(cv::String f_name);
  */
 void CannyCmp(cv::String f_name);
 
-/* 
- * 输出高斯平滑处理的视频
- */
+/* 输出高斯平滑处理的视频 */
 void GauBlurVideoCmp(cv::String f_name);
 
-/* 
- * 输出边缘化处理的视频
- */
+/* 输出边缘化处理的视频 */
 void CannyVideoCmp(cv::String f_name);
 
 /*
@@ -39,16 +35,10 @@ void CannyVideoCmp(cv::String f_name);
  */
 void BilFiltVideoCmp(cv::String f_name);
 
-/*
- * 得到双边平滑处理的视频并
- * 保存
- */
+/* 得到双边平滑处理的视频并保存 */
 void BilFiltVideoSav(cv::String f_name);
 
-/* 
- * 得到边缘化处理的视频并
- * 保存
- */
+/* 得到边缘化处理的视频并保存 */
 void CannyVideoSav(cv::String f_name);
 
 #endif
